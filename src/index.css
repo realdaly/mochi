@@ -149,6 +149,12 @@ body {
   font-weight: bold;
 }
 
+.detailsWrapper .details .description {
+  margin: 1rem 0;
+  max-height: 8rem;
+  overflow-y: auto;
+}
+
 .detailsWrapper .details .info {
   display: flex;
   justify-content: space-between;
@@ -156,6 +162,10 @@ body {
 
 .detailsWrapper .details .info ul {
   list-style-type: none;
+}
+
+.detailsWrapper .details .info ul li {
+  margin-bottom: 5px;
 }
 
 .detailsWrapper .details .info ul li::before {
@@ -172,6 +182,8 @@ body {
 .detailsWrapper .details button {
   border: none;
   max-width: 10rem;
+  min-width: 10rem;
+  min-height: 2.5rem;
   background-color: var(--darkColor);
   font-weight: bold;
   color: var(--bgColor);
